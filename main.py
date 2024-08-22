@@ -1,6 +1,6 @@
 from flask import Flask,request
 from twilio.twiml.messaging_response import MessagingResponse
-from Response import Response
+from Response.Resposta import Response
 
 app = Flask(__name__)
 
@@ -8,7 +8,7 @@ app = Flask(__name__)
 def bot():
     msg_resposta = request.values.get('Body', '')
     print(msg_resposta)
-    resp = MessagingResponse()
+    resp = MessagingResponse(Response.seed())
     msg = resp.message()
     msg.body()
     return str(resp)
