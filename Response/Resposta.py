@@ -1,4 +1,4 @@
-import templats
+from Response.templats import resposta
 
 class Response:
 
@@ -8,4 +8,4 @@ class Response:
 
     @staticmethod
     def seed():
-        return templats.resposta
+        return resposta

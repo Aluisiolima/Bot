@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 @app.route("/bot", methods=['POST'])
 def bot():
-    msg_resposta = request.values.get('Body', '')
+    msg_resposta = request
     print(msg_resposta)
-    resp = MessagingResponse(Response.seed())
-    msg = resp.message()
+    resp = MessagingResponse()
+    msg = resp.message(Response.seed())
     msg.body()
     return str(resp)
 
@@ -18,4 +18,4 @@ def index():
     return "esta tudo ok"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
