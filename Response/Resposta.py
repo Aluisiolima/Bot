@@ -1,4 +1,5 @@
-from Response.templats import resposta
+from Response.templatsRespostas import resposta
+from Response.templastsMensangens import apresentacao
 
 class Response:
     def __init__(self,  cliente , msg):
@@ -6,7 +7,7 @@ class Response:
         self.msg = str(msg)
 
     def read(self):
-        if self.msg in ['oi', 'ola', 'olá', 'oiii', 'oiiii', 'bom dia' , 'boa tarde', 'boa noite']:
+        if self.msg in apresentacao:
             return self.seed(action="apresentacao")
         else :
             return 'nao entedi sua mensagem poderia manda novamente'
