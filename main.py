@@ -9,7 +9,7 @@ def bot():
     msg_recebida = request.values.get("Body", "").lower()
     cliente = request.values.get("ProfileName", '')
     bot = Response(cliente,msg_recebida)
-    print(msg_recebida)
+
 
     resp = MessagingResponse()
     msg = resp.message()
