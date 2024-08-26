@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define a variável de ambiente para Flask
-ENV FLASK_APP=main.py
+ENV FLASK_APP=app.py
 
 # Expõe a porta em que o Flask será executado
 EXPOSE 5000
