@@ -10,11 +10,5 @@ COPY . /app
 # Instale as dependências listadas no requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Define a variável de ambiente para Flask
-ENV FLASK_APP=main.py
-
-# Expõe a porta em que o Flask será executado
-EXPOSE 5000
-
 # Especifique o comando de inicialização
 CMD ["python", "main.py"]
