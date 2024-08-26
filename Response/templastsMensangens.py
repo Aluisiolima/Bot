@@ -1,1 +1,1 @@
-apresentacao = ['oi', 'ola', 'olá', 'oiii', 'oiiii', 'bom dia' , 'boa tarde', 'boa noite']
+apresentacao = ['oi', 'ola', 'olá', 'oiii', 'oiiii', 'oii']

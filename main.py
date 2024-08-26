@@ -10,7 +10,7 @@ def bot():
     msg_recebida = request.values.get("Body", "").lower()
     cliente = request.values.get("ProfileName", '')
     bot = Response(cliente,msg_recebida)
-
+    print(request.values)
 
     resp = MessagingResponse()
     msg = resp.message()
@@ -22,4 +22,4 @@ def index():
     return "esta tudo ok"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0' ,port=5000)
+    app.run(debug=True)
