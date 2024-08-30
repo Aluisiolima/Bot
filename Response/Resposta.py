@@ -1,5 +1,5 @@
-from Response.templatsRespostas import resposta
-from Response.templastsMensangens import apresentacao
+import Response.templatsRespostas as tr
+import Response.templastsMensangens as tm
 
 class Response:
     def __init__(self,  cliente , msg):
@@ -7,15 +7,23 @@ class Response:
         self.msg = str(msg)
 
     def read(self):
-        if bool(set(self.msg.split()) & set(apresentacao)):
+        if bool(set(self.msg.split()) & set(tm.metodosApresentacao)):
             return self.seed(action="apresentacao")
         
-        elif self.msg == '1':
-            return 'entao vc deseja ver nosso cursos ? digite *ok*  '
+        elif self.msg in tm.metodosCurso:
+            return self.seed(action='curso')
 
         else :
             return 'nao entedi sua mensagem poderia manda novamente'
     
     def seed(self,action):
-        if action == "apresentacao":
-            return resposta(self.cliente)
+        if action == 'apresentacao':
+            return tr.resposta(self.cliente)
+        elif action == 'curso':
+            return tr.apresentarProdutos()
+        elif action == 'redes sociais':
+            pass
+        elif action == 'sobre nois':
+            pass
+        else :
+            return 'acao nao indentificada : error *404*'
