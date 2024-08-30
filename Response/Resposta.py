@@ -10,7 +10,7 @@ class Response:
         if bool(set(self.msg.split()) & set(tm.metodosApresentacao)):
             return self.seed(action="apresentacao")
         
-        elif self.msg in tm.metodosCurso:
+        elif self.msg in tm.metodosProdutos:
             return self.seed(action='curso')
 
         else :
