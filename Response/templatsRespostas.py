@@ -17,3 +17,13 @@ def apresentarProdutos():
           a += f'curso de *{key}* no valor de _{value}_\n'
 
      return f'termos disponiveis no momentos os cursos de :\n{a}' 
+
+def redes():
+     a = ''
+     for key,value in db.dados:
+          a += f'*{key}* : _{value}_\n'
+
+     return f'nossa redes sociais sao:\n{a}' 
+
+def sobre():
+     return f"somos uma empressa focada e organizada pra vc por vc!!!\nsempre a busca de maior qualidade para nosso clientes"

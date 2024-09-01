@@ -13,6 +13,12 @@ class Response:
         elif self.msg in tm.metodosProdutos:
             return self.seed(action='curso')
 
+        elif self.msg in tm.metodosRedes:
+            return self.seed(action='redes')
+        
+        elif self.msg in tm.metodosSobre:
+            return self.seed(action='sobre')
+        
         else :
             return 'nao entedi sua mensagem poderia manda novamente'
     
@@ -22,8 +28,8 @@ class Response:
         elif action == 'curso':
             return tr.apresentarProdutos()
         elif action == 'redes':
-            pass
+            return tr.redes()
         elif action == 'sobre':
-            pass
+            return tr.sobre()
         else :
             return 'acao nao indentificada : error *404*'
