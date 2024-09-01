@@ -21,9 +21,9 @@ class Response:
             return tr.resposta(self.cliente)
         elif action == 'curso':
             return tr.apresentarProdutos()
-        elif action == 'redes sociais':
+        elif action == 'redes':
             pass
-        elif action == 'sobre nois':
+        elif action == 'sobre':
             pass
         else :
             return 'acao nao indentificada : error *404*'

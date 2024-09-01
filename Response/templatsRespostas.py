@@ -1,3 +1,5 @@
+import database.banco as db
+
 def resposta(clinte) :
      return f"""Oi  {clinte}! Que legal que você quer saber mais sobre nossos cursos! Na Qualifica📚, temos opções incríveis que podem transformar sua carreira.
 
@@ -7,11 +9,11 @@ def resposta(clinte) :
     2 para saber mais sobre nois !!!
     3 para ver nossa redes sociais 😁"""
 
-cursoDisponiveis = {'informatica basica': 49.99, 'word':29.99, 'powerPoite' : 59.99}
+
 
 def apresentarProdutos():
      a = ''
-     for key,value in cursoDisponiveis.items():
+     for key,value in db.cursoDisponiveis:
           a += f'curso de *{key}* no valor de _{value}_\n'
 
      return f'termos disponiveis no momentos os cursos de :\n{a}' 
