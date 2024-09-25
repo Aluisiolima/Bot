@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename="./img/img-bot.ico")}}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename="./css/reset.css")}}">
     <link rel="stylesheet" href="{{url_for('static', filename="./css/nav.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="./css/card_product.css")}}">
 </head>
 <body>
     <nav class="nav-bar">
         <h1 class="title">bot-whatsapp</h1>
     </nav>
+    <div class="card_product">
+        <img src="{{url_for('static', filename="./img/img-bot.svg")}}" alt="img bot whatsapp">
+        <div class="title_card">
+            <h2>Whatsapp bot</h2>
+            <img src="{{url_for('static', filename="./img/star.png")}}"  alt="img stars" >
+        </div>
+        <p class="frase">the best!!!</p>
+    </div>
 </body>
 </html>
