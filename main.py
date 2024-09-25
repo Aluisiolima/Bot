@@ -1,8 +1,8 @@
 
-from flask import Flask,request
+from flask import Flask,render_template,request
 from twilio.twiml.messaging_response import MessagingResponse
 from Response.Resposta import Response
-import database.banco as db
+from adm import *
 
 app = Flask(__name__)
 
@@ -19,12 +19,12 @@ def bot():
     return str(resp)
 
 @app.route("/adm")
-def adm():
-    return str(db.cursoDisponiveis)
+def tela_adm():
+    return adm()
 
 @app.route("/")
 def index():
-    return "esta tudo ok"
+    return render_template("index.html", title="my bot")
 
 if __name__ == '__main__':
     app.run(debug=True)

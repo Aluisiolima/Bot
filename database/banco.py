@@ -15,7 +15,7 @@ def inseri_mensagem(mensagens,ação):
     conn.execute("INSERT INTO mensagens (mensagem,acao) VALUES (?,?);",(mensagens,ação))
     conexao.commit()
 
-inseri_mensagem(input('mensagem: '),input('acao: '))
+# inseri_mensagem(input('mensagem: '),input('acao: '))
 
 conn.close()
 

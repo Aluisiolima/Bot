@@ -11,7 +11,7 @@ class Response:
             return self.seed(action="apresentacao")
         
         elif self.msg in tm.metodosProdutos:
-            return self.seed(action='curso')
+            return self.seed(action='produtos')
 
         elif self.msg in tm.metodosRedes:
             return self.seed(action='redes')
@@ -25,7 +25,7 @@ class Response:
     def seed(self,action):
         if action == 'apresentacao':
             return tr.resposta(self.cliente)
-        elif action == 'curso':
+        elif action == 'produtos':
             return tr.apresentarProdutos()
         elif action == 'redes':
             return tr.redes()
