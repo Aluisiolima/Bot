@@ -1,0 +1,17 @@
+.btn-now{
+    display: flex;
+    justify-content: flex-end;
+    width: 90vw;
+    margin: 0 auto;
+}
+.btn{
+    background: linear-gradient(to right, #58AC72 50%, black 50%);
+    color: #fff;
+    width: 6em;
+    height: 1.5em;
+    font-size: 2em;
+    margin-top: .3em;
+    padding: 0 .5em 0 .5em;
+    border-radius: 2em;
+    border: none;
+}
