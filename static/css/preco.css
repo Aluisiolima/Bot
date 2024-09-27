@@ -1,0 +1,27 @@
+.preco{
+    margin: 0 auto;
+    display: flex;
+    margin-top: .5em;
+}
+.table{
+    width: 33.333333%;
+    border: 2px solid black;
+    padding: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.table > p{
+    font-size: 10px;
+}
+.basic{
+    height: max-content;;
+    background: rgb(33, 100, 245, 0.58);
+}
+.medio{
+    height: max-content;;
+    background: rgb(230, 223, 23, 0.28);
+}
+.premium{
+    height: max-content;;
+    background:rgb(255, 95, 122, 0.70);
+}
