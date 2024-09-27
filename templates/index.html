@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename="./css/btn-now.css")}}">
     <link rel="stylesheet" href="{{url_for('static', filename="./css/card-msg.css")}}">
     <link rel="stylesheet" href="{{url_for('static', filename="./css/card-servico.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="./css/instrucoes.css")}}">
 </head>
 <body>
     <nav class="nav-bar">
@@ -40,7 +41,7 @@
     </div>
     <div class="card-servico">
         <div class="card-servico-info">
-            <a href="#">
+            <a href="#instrucoes">
                 <img src="{{url_for('static', filename="./img/whatsapp-business-34.png")}}" alt="whatsapp-business" class="img-card">
             </a>
             <img src="{{url_for('static', filename="./img/img-seta.svg")}}" alt="img-seta" class="seta">
@@ -60,6 +61,48 @@
             <img src="{{url_for('static', filename="./img/img-seta.svg")}}" alt="img-seta" class="seta">
             <p>Conferir seu bot </p>
         </div>
+    </div>
+    <div class="instrucoes" id="instrucoes">
+        <h3>Instruções de Compra:</h3>
+    <ol>
+        <li>
+            Clique no botão "Start Now":
+            <ul>
+                <li>Inicie uma consulta com nossos atendentes para dar o primeiro passo.</li>
+            </ul>
+        </li>
+        <li>
+            Documentação Necessária:
+            <ul>
+                <li>Esteja preparado para fornecer uma série de documentos, como:</li>
+                <ul>
+                    <li>Documento de identidade (RG ou CNH)</li>
+                    <li>CPF</li>
+                    <li>Outros documentos específicos solicitados pelos atendentes</li>
+                </ul>
+            </ul>
+        </li>
+        <li>
+            Processo de Aprovação:
+            <ul>
+                <li>Tenha em mente que a aprovação do seu número requer tempo e não acontece de forma imediata.</li>
+                <li>A equipe realizará uma verificação detalhada para garantir a segurança e a conformidade.</li>
+            </ul>
+        </li>
+        <li>
+            Acompanhamento:
+            <ul>
+                <li>Após o envio dos documentos, você receberá atualizações sobre o status da sua solicitação.</li>
+                <li>Caso tenha dúvidas, não hesite em entrar em contato com nossos atendentes.</li>
+            </ul>
+        </li>
+        <li>
+            Agradecimento:
+            <ul>
+                <li>Agradecemos pela sua paciência e confiança em nossos serviços!</li>
+            </ul>
+        </li>
+    </ol>
     </div>
 </body>
 </html>

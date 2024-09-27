@@ -1,0 +1,28 @@
+.instrucoes{
+    background:#FFFFFF ;
+    height: auto;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ol {
+    counter-reset: item;
+    list-style-type: decimal;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px; 
+}
+ol li {
+    margin-bottom: 10px;
+}
+ol li li {
+    margin-left: 20px; 
+}
+ol li li li {
+    margin-left: 40px;
+}
+
