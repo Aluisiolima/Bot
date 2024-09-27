@@ -1,6 +1,6 @@
 
-# Auto-Certificação
-O Auto-Certificação e um projeto de automação pensado em aumenta a velociadades de criação dos certificados das empressas de curso. Com práticidade e facilidade, uma simple solução para o problema de muitos...
+# bot-whastapp
+O bot-whastapp e um projeto de automação pensado em aumenta a velociadades de respostas das empressas contratantes. Com práticidade e facilidade, uma simple solução para o problema de muitos...
 
 ## Índice
 
@@ -9,7 +9,7 @@ O Auto-Certificação e um projeto de automação pensado em aumenta a velociada
 
 ## Introdução
 
-O projeto **Auto-Certificação** é uma aplicação escrita em Python que automátizar a criação de certificados . Ele foi criado para dimunui o trabalho de converciona esses documentos  e é muito útil para as empressas do desse ramo.
+O projeto **bot-whastapp** é uma aplicação escrita em Python que automátizar as respostas e o atendimento previo ao cliente. Ele foi criado para dimunui o trabalho de repetitivo e é muito útil para as empressas que nessecitao de um atendimento mais rapido e pratico.
 
 ## Instalação
 
@@ -40,3 +40,4 @@ O projeto **Auto-Certificação** é uma aplicação escrita em Python que autom
     pip install -r requirements.txt
 
 
+## ou acesse https://whatsapp-bot-bilj.onrender.com e perca seu bot 
