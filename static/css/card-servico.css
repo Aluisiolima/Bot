@@ -1,0 +1,26 @@
+.card-servico{
+    height: auto;
+    width: 100vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+.card-servico-info{
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+    max-width: 33.3333333333vw;
+    justify-content: center;
+    align-items: center;
+}
+.img-card{
+    height: 100px;
+    width: 100px;
+}
+.seta{
+    height: 50px;
+    width: 50px;
+}
+.card-servico-info > p{
+    text-align: center;
+}

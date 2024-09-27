@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename="./css/card_product.css")}}">
     <link rel="stylesheet" href="{{url_for('static', filename="./css/btn-now.css")}}">
     <link rel="stylesheet" href="{{url_for('static', filename="./css/card-msg.css")}}">
+    <link rel="stylesheet" href="{{url_for('static', filename="./css/card-servico.css")}}">
 </head>
 <body>
     <nav class="nav-bar">
@@ -37,6 +38,28 @@
             </p>
         </div>
     </div>
-    
+    <div class="card-servico">
+        <div class="card-servico-info">
+            <a href="#">
+                <img src="{{url_for('static', filename="./img/whatsapp-business-34.png")}}" alt="whatsapp-business" class="img-card">
+            </a>
+            <img src="{{url_for('static', filename="./img/img-seta.svg")}}" alt="img-seta" class="seta">
+            <p>intrunsçõe de compra</p>
+        </div>
+        <div class="card-servico-info">
+            <a href="#">
+                <img src="{{url_for('static', filename="./img/sobre-orcamento.png")}}" alt="whatsapp-business" class="img-card">
+            </a>
+            <img src="{{url_for('static', filename="./img/img-seta.svg")}}" alt="img-seta" class="seta">
+            <p>valores e planos</p>
+        </div>
+        <div class="card-servico-info">
+            <a href="/adm">
+                <img src="{{url_for('static', filename="./img/bot-ver o meu.png")}}" alt="whatsapp-business" class="img-card">
+            </a>
+            <img src="{{url_for('static', filename="./img/img-seta.svg")}}" alt="img-seta" class="seta">
+            <p>Conferir seu bot </p>
+        </div>
+    </div>
 </body>
 </html>
