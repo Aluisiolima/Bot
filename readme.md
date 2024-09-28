@@ -41,3 +41,5 @@ O projeto **bot-whastapp** é uma aplicação escrita em Python que automátizar
 
 
 ## ou acesse https://whatsapp-bot-bilj.onrender.com e perca seu bot 
+
+acesso estranjeiro
