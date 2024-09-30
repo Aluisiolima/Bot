@@ -10,8 +10,8 @@
     color: white;
     text-shadow: 1px 1px 3px black;
 }
-.table > p{
-    font-size: 10px;
+.table > ol > ul > li{
+    font-size: .8pc;
 }
 .basic{
     height: max-content;;
